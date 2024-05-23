@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" href="./codestyle.css">
+<link rel='stylesheet' href='./style.css'>
+<script src="./codestyle.js"></script>
+<script src='./engine.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/Subham-Mandal/oneserver@master/v1.js'></script>
+
+</head>
+<body>
+
+<div id='topbar'>
+        <div id='topleft' class='holder'>
+            <button id='full' class='topbutton' onclick='edit("full","lib","html","css","js","full")'>Full</button>
+            <button id='lib' class='topbutton' onclick='edit("lib","html","css","js","full")'>lib</button>
+            <button id='html' class='topbutton' onclick='edit("html","lib","css","js","full")'>html</button>
+            <button id='css' class='topbutton' onclick='edit("css","lib","html","js","full")'>style</button>
+            <button id='js' class='topbutton' onclick='edit("js","lib","html","css","full")'>js</button>
+<input id='message' disabled='true'  value='Sonkoloniya'>
+        </div>
+
+        <div id='topright' class='holder'>
+
+         
+          <input type="text" id="searchBar" oninput='trigOpen(this.value)' onkeyup="filterList()" placeholder="Command...">
+   <input id='viewidth' class='topbutton' type='number' max='100' min='0' value='50' onblur='changewidth(this.value)'>
+<button id='restore' class='topbutton' onclick='Restore()'>restore</button>
+            <button id='clear' class='topbutton' onclick='clearx()'>Clear X</button>
+            <button id='live' class='topbutton' onclick='live()'>Manual</button>
+            <button id='run' class='topbutton' onclick='run()'>Run ▶</button>
+        </div>
+    </div>
+
+    <div id='leftbar' class='holder'>
+        <div id='fulltxt' class='txt'></div>
+        <div id='libtxt' class='txt'></div>
+        <div id='htmltxt' class='txt'></div>
+        <div id='csstxt' class='txt'></div>
+        <div id='jstxt' class='txt'></div>
+    </div>
+
+    <div id='rightbar' class='holder'>
+        <iframe id='view'></iframe>
+    </div>
+
+    <div id='bottombar' class='holder'>
+
+<ul id='keyList'></ul>
+<textarea id='openCodetxt'></textarea><br><br>
+<button id='copy' onclick='copyCode()'>Copy</button>
+<button id='importx' onclick='importCode()'>Import</button>
+<input id='sessionKey' style='display:none'/>
+</div>
+
+   <div id='consolebar' class='holder'></div>
+</body>
+</html>

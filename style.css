@@ -1,0 +1,222 @@
+.CodeMirror {
+    height: 100%;
+    position: relative;
+    font-size: 16px;
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* IE */
+    overflow-wrap: break-word; /* Standard */
+}
+
+.CodeMirror-sizer {
+    padding-left: 30px;
+    padding-right: 10px;
+
+}
+
+.CodeMirror-scroll {
+    overflow-y: auto;
+    overflow-x: none;
+    height: 100%;
+    padding-right: 0 !important;
+}
+
+.CodeMirror-gutter-wrapper {
+    position: fixed;
+}
+
+.CodeMirror-gutters {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+}
+
+      
+.holder {
+            position: fixed;
+        }
+
+        #topleft {
+            height: 5%; width: 70%;
+            top: 0; left: 0;
+            background-color: white; color: black;
+        }
+
+        #topright {
+            height: 5%; width: 40%;
+item-align:right;
+            top: 0; right: 0;
+            background-color: white; color: black;
+        }
+
+        #bottombar {
+            height: 0%; width: 25%;
+            bottom: 0; right: 0;
+            background-color: white; color: black;
+        transition: transform 0.5s ease;
+      transform: translateY(95%);
+   box-shadow: 0 0 1px 1px grey;
+padding-left:1%;padding-right:1%;
+    }
+
+   #consolebar {
+            height: 0%; width: 25%;
+            bottom: 0; right: 0;
+            background-color: black; color: white;
+        transition: transform 0.5s ease;
+      transform: translateY(95%);
+   box-shadow: 0 0 1px 1px grey;
+padding-left:2%;padding-right:2%;
+    }
+      #leftbar {
+            height: 94%; width: 50%;
+            top: 5%; left: 0;
+            background-color: white; color: black;
+            box-shadow: 0 0 1px 1px grey;
+        }
+
+        #rightbar {
+            height: 94%; width: 50%;
+            top: 5%; right: 0;
+            background-color: white; color: black;
+            box-shadow: 0 0 1px 1px grey;
+        }
+
+        #view {
+            height: 100%; width: 100%;
+            border: none; overflow: auto;
+        }
+
+      .topbutton {
+    background-color:white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: blue;
+    height: 90%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.topbutton:hover {
+    background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+        .txt {
+            height: 100%; width: 100%;
+            display: none;
+            padding: 1%;
+            font-size: 12px;
+        }
+
+        input {
+            width: 60px;
+text-align:center;
+        }
+
+        #live, #run {
+            color: white;
+            background-color: green;
+        }
+
+
+ #restore{
+            color: black;
+            background-color: yellow;
+        }
+
+   #clear{
+
+            color: white;
+            background-color: red;
+        }
+
+#message{
+height:100%;
+width:300px;
+border:none;
+outline:none;
+font-size:10px;
+text-align:left;
+padding-left:1%;
+background-color:white;
+color:red;
+
+}
+
+
+
+
+
+#openCodetxt {
+  height: 400px;
+  width: 100%; /* Adjusted to 100% for responsiveness */
+  padding: 2%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Prevents resizing of textarea */
+}
+
+#keyList {
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+#keyList li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+#keyList li:hover {
+  background-color: #f0f0f0;
+}
+
+#copy, #importx {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#searchBar{
+width:50%;
+font-size:15px;
+height:100%;
+border:none;
+}
+
+#copy {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#importx {
+  background-color: #008CBA;
+  color: white;
+}
+
+#copy:hover {
+  background-color: #45a049; /* Darker shade of green for copy button */
+}
+
+#importx:hover {
+  background-color: #0073e6; /* Darker shade of blue for import button */
+}
+
